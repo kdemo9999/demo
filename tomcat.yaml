@@ -1,1 +1,10 @@
-# Testing
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tomcat
+spec:
+  containers:
+  - name: mytomcat
+    image: tomcat:latest
+    ports:
+    - containerPort: 80
